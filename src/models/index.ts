@@ -14,6 +14,7 @@ export enum GlobalColor {
 
 export interface SectionTitleProp {
   title: string;
+  align: Align;
 }
 
 export interface LinkButtonProp {

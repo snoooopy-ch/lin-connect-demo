@@ -13,23 +13,23 @@ const Item: React.FC<ItemProp> = ({
       <img className="item-img" src={image} />
       <div className="dots">
         <Dot 
-          size={14}
+          size={12}
           color={GlobalColor.WHITE}
         />
         <Dot 
-          size={14}
+          size={12}
           color={GlobalColor.LIGHTGRAY}
         />
         <Dot 
-          size={14}
+          size={12}
           color={GlobalColor.DARKGRAY}
         />
         <Dot 
-          size={14}
+          size={12}
           color={GlobalColor.YELLOW}
         />
         <Dot 
-          size={14}
+          size={12}
           color={GlobalColor.LIGHTBLUE}
         />
       </div>

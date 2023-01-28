@@ -1,0 +1,12 @@
+.info-section {
+  margin: 100px auto 0;
+  width: 1000px;
+
+  .info-arrow {
+    margin-top: 16px;
+  }
+
+  @media only screen and (max-width:1000px) {
+    width: 100%;
+  }
+}

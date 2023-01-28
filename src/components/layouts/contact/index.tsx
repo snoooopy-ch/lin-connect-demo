@@ -3,14 +3,15 @@ import TextArea from "../../molecules/textarea";
 import TextField from "../../molecules/textfield";
 import Button from "../../molecules/button";
 import './style.scss';
-import { GlobalColor } from "../../../models";
+import { Align, GlobalColor } from "../../../models";
 
 const Contact: React.FC = () => {
   return (
     <section className="contact">
       <form className="contact-form">
         <SectionTitle 
-            title='About'
+            title='Contact'
+            align={Align.CENTER}
           />
         <div className="contact-row justify-between">
           <div className="contact-row col-6">

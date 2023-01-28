@@ -1,3 +1,5 @@
+import Facebook from "../../atoms/facebook";
+import Instagram from "../../atoms/instagram";
 import "./style.scss";
 
 const Header: React.FC = () => {
@@ -16,6 +18,10 @@ const Header: React.FC = () => {
 										<li className="menu-item"><a href="/">Shop</a></li>
 										<li className="menu-item"><a href="/">Info</a></li>
 										<li className="menu-item"><a href="/">Press</a></li>
+										<li className="menu-item">
+											<a className="mr-16" href="/"><Instagram /></a>
+											<a href="/"><Facebook /></a>
+										</li>
 									</ul>
 								</nav>
 							</div>

@@ -3,6 +3,11 @@
 .App {
   text-align: center;
   color: $text-color;
+  font-weight: 400;
+}
+
+* {
+  font-family: 'Baskerville';
 }
 
 .App-logo {
@@ -117,4 +122,8 @@
   &-end {
     margin-left: auto;
   }
+}
+
+.mr-16 {
+  margin-right: 16px;
 }

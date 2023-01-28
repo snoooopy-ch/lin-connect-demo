@@ -10,7 +10,7 @@ const MainVisualPC: React.FC = () => {
         </div>
         <div className="image-wrapper wrapper2">
           <div>
-            <img src="./assets/images/logo_m.png" />
+            <img className="main_logo" src="./assets/images/logo_m.png" />
             <img className="main_img" src="./assets/images/main_img2.png" />
           </div>
         </div>

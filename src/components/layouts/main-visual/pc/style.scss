@@ -3,7 +3,7 @@
   padding: 0 33px;
 
   .wrapper1 {
-    width: 496px;
+    width: 490px;
   }
 
   .wrapper2 {
@@ -11,7 +11,7 @@
   }
 
   .wrapper3 {
-    width: 440px;
+    width: 450px;
   }
 
   .image-wrapper {
@@ -21,6 +21,11 @@
     img {
       width: 100%;
       vertical-align: bottom;
+    }
+
+    .main_logo {
+      width: 90%;
+      margin-bottom: 24px;
     }
   }
 }

@@ -1,3 +1,5 @@
+@import '../../../variables.scss';
+
 .link-button {
   display: flex;
   align-items: center;
@@ -6,8 +8,8 @@
   a {
     line-height: 39px;
     padding:  0 16px;
-    color: black;
+    color: $text-color;
     text-decoration: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid $text-color;
   }
 }

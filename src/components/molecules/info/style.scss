@@ -1,11 +1,27 @@
 .info-item {
-  margin-top: 10px;
+  width: 100%;
+  margin-top: 30px;
   padding: 20px 0;
   position: relative;
   text-align: left;
+  border-bottom: 2px solid #efefef;
+
+  &-title {
+    font-family: 'Noto Serif JP';
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 16px;
+  }
+
+  &-date {
+    font-family: 'Noto Serif JP';
+    font-size: 12px;
+    line-height: 12px;
+  }
 
   &-arrow {
     position: absolute;
     right: 0;
+    top: 24%;
   }
 }

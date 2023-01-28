@@ -1,3 +1,8 @@
+@import '../../../variables.scss';
+
+.header {
+  padding: 0 20px;
+}
 .banner-menu {
   position: relative;
   font-size: 10px;
@@ -5,6 +10,7 @@
   height: 100px;
 
   .logo {
+    font-family: "Baskerville";
     display: flex;
     align-items: center;
     font-weight: 400;
@@ -38,7 +44,7 @@
   position: relative;
   text-align: center;
   line-height: 1;
-  padding: 0 20px;
+  padding: 0 18px;
   font-size: 14px;
 }
 
@@ -55,6 +61,9 @@
   display: inline-block;
   padding: 30px 0;
   text-decoration: none;
+  font-size: 18px;
+  line-height: 16px;
+  color: $text-color;
 }
 
 .banner-menu nav ul li .dropdown li a {
@@ -80,25 +89,6 @@
   width: 100%;
   text-align: left;
 }
-
-.banner-menu nav ul li:after {
-  display: block;
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  width: 1px;
-  height: 20px;
-  background: rgba(0, 0, 0, 0.7);
-}
-
-.banner-menu nav ul li:last-child:after {
-  display: none;
-}
-
-
 
 
 .menu-toggle {
@@ -197,10 +187,6 @@ nav.sp a:focus {
       display: none;
       width: 100%;
   }
-
-  .banner-menu nav {
-      position: relative;
-  }
 }
 
 
@@ -224,21 +210,6 @@ nav.sp a:focus {
      position: relative;
      font-size: 13px;
  }
-
-  nav.sp li:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 15px;
-    width: 8px;
-    height: 8px;
-    margin: auto;
-    border-top: 2px solid #f58610;
-    border-right: 2px solid #f58610;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
 
   nav.sp li a {
     padding: 1.5em 1.3em 1.5em 1.3em;
