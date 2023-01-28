@@ -1,0 +1,17 @@
+.item {
+  &-img {
+    width: 100%;
+  }
+
+  &-title {
+    text-align: left;
+  }
+
+  &-price {
+    text-align: right;
+  }
+
+  .dots {
+    display: flex;
+  }
+}

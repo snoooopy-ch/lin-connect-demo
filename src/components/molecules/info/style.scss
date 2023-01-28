@@ -1,0 +1,11 @@
+.info-item {
+  margin-top: 10px;
+  padding: 20px 0;
+  position: relative;
+  text-align: left;
+
+  &-arrow {
+    position: absolute;
+    right: 0;
+  }
+}

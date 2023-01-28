@@ -1,0 +1,120 @@
+@import './variables.scss';
+
+.App {
+  text-align: center;
+  color: $text-color;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.background-white {
+  background-color: $white-color;
+}
+
+.background-lightgray {
+  background-color: $lightgray-color;
+}
+
+.background-darkgray {
+  background-color: $darkgray-color;
+}
+
+.background-yellow {
+  background-color: $yellow-color;
+}
+
+.background-lightblue {
+  background-color: $lightblue-color;
+}
+
+.text-white {
+  color: $white-color;
+}
+
+.text-lightgray {
+  color: $lightgray-color;
+}
+
+.text-darkgray {
+  color: $darkgray-color;
+}
+
+.text-yellow {
+  color: $yellow-color;
+}
+
+.text-lightblue {
+  color: $lightblue-color;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1400px){
+  .container {
+    width: 100%;
+  }
+}
+
+.sp {
+	display: none;
+}
+
+@media screen and (max-width: 767px) {
+	.sp {
+		display: block;
+	}
+
+	.pc {
+		display: none !important;
+	}
+
+}
+
+.align {
+  &-start {
+    margin-right: auto;
+  }
+
+  &-center {
+    margin: 0 auto;
+  }
+
+  &-end {
+    margin-left: auto;
+  }
+}

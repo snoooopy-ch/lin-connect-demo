@@ -1,24 +1,40 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/layouts/header';
+import MainVisual from './components/layouts/main-visual';
+import About from './components/layouts/about';
+import Items from './components/layouts/items';
+import InfoList from './components/layouts/info-list';
+import Contact from './components/layouts/contact';
+import Footer from './components/layouts/footer';
+import { InfoItem } from './models/index'
+import './App.scss';
+
 
 function App() {
+  const infos = [
+    {
+      title: '2022ウィンターコレクション発表のお知らせ', date: '2022/10/01'
+    },
+    {
+      title: '2022ウィンターコレクション発表のお知らせ', date: '2022/10/01'
+    },
+    {
+      title: '2022ウィンターコレクション発表のお知らせ', date: '2022/10/01'
+    }
+  ] as InfoItem[];
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <Header />
+        <MainVisual />
+        <About />
+        <Items />
+        <InfoList 
+          infos={infos}/>
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 }

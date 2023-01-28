@@ -1,0 +1,16 @@
+.contact {
+  &-row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 24px;
+        
+    .col-6 {
+      width: 48%;
+    }
+  }
+
+  .justify-between {
+    justify-content: space-between;
+  }
+}

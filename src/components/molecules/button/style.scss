@@ -1,0 +1,30 @@
+@import '../../../variables.scss';
+
+.button {
+  border-radius: 6px;
+  width: 160px;
+  height: 48px;
+  font-size: 18px;
+  line-height: 32px;
+
+  &-white {
+    background-color: $white-color;
+    border: 1px solid $white-color;
+  }
+  &-lightgray {
+    background-color: $lightgray-color;
+    border: 1px solid $lightgray-color;
+  }
+  &-darkgray {
+    background-color: $darkgray-color;
+    border: 1px solid $darkgray-color;
+  }
+  &-yellow {
+    background-color: $yellow-color;
+    border: 1px solid $yellow-color;
+  }
+  &-lightblue {
+    background-color: $lightblue-color;
+    border: 1px solid $lightblue-color;
+  }
+}

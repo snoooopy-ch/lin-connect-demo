@@ -1,0 +1,26 @@
+.main-visual-container {
+  display: flex;
+  padding: 0 33px;
+
+  .wrapper1 {
+    width: 496px;
+  }
+
+  .wrapper2 {
+    width: 380px;
+  }
+
+  .wrapper3 {
+    width: 440px;
+  }
+
+  .image-wrapper {
+    display: flex;
+    align-items: flex-end;
+
+    img {
+      width: 100%;
+      vertical-align: bottom;
+    }
+  }
+}

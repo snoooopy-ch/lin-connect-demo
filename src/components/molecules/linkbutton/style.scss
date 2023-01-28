@@ -1,0 +1,13 @@
+.link-button {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+
+  a {
+    line-height: 39px;
+    padding:  0 16px;
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+  }
+}
