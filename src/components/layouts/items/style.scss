@@ -1,6 +1,6 @@
 .items-section {
   margin: 190px auto 0;
-  width: 880px;
+  width: 1000px;
   
   @media only screen and (max-width:1000px) {
     width: 100%;
@@ -12,9 +12,18 @@
     .swiper-button-prev, .swiper-button-next {
       display: none;
     }
+  }
 
-    &-container {
+  &-container {
+    position: relative;
+    padding: 0 60px;
+
+    @media only screen and (max-width:1000px) {
       padding: 0 25px;
+
+      .custom-navigation {
+        display: none;
+      }
     }
   }
 
