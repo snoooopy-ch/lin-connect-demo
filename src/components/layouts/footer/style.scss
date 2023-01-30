@@ -93,6 +93,7 @@
         list-style: none;
         justify-content: end;
         align-items: center;
+        padding: 0 100px;
 
         @media only screen and (max-width: 1000px) {
           justify-content: center;
@@ -106,6 +107,7 @@
           -webkit-column-gap: 1em;
           column-count: 3;
           column-gap: 1em;
+          margin-top: 60px;
         }
 
         li {
@@ -123,6 +125,10 @@
             &:nth-child(3n+1) {
               clear:left;
             }
+          }
+
+          .icon {
+            display: flex;
           }
 
           a {

@@ -4,9 +4,15 @@ const TextField : React.FC<TextFieldProp> = (prop: TextFieldProp) => {
   return (
     <div className="textfield">
       <div className="textfield-label">
-        { prop.label }
+        { prop.label?? '' }
       </div>
-      <input type="text" className="textfield-input" placeholder={prop.placeholder} />
+      <input 
+        value={prop.value}
+        type="text" 
+        className="textfield-input" 
+        placeholder={prop.placeholder?? ''} 
+        onChange={prop.onChange?? undefined }
+      />
     </div>
   )
 }
@@ -14,6 +20,8 @@ const TextField : React.FC<TextFieldProp> = (prop: TextFieldProp) => {
 export default TextField;
 
 export interface TextFieldProp {
-  label: string;
-  placeholder: string;
+  value?: string;
+  label?: string;
+  placeholder?: string;
+  onChange?: (e: any) =>void;
 }

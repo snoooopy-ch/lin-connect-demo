@@ -1,8 +1,11 @@
 import SectionTitle from "../../atoms/section-title";
 import LinkButton from "../../molecules/linkbutton";
-import Info from "../../molecules/info";
-import { InfoItem, InfoListProp, Align } from "../../../models";
+import Info, { InfoItem } from "../../molecules/info";
 import './style.scss';
+
+export interface InfoListProp {
+  infos: InfoItem[];
+}
 
 const InfoList: React.FC<InfoListProp> = (infos) => {
   return (
@@ -17,6 +20,7 @@ const InfoList: React.FC<InfoListProp> = (infos) => {
         {infos.infos.map((info: InfoItem, i: number) => {
           return (
             <Info 
+              key={i}
               title={info.title}
               date={info.date}
             />

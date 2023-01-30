@@ -6,8 +6,8 @@ import Items from './components/layouts/items';
 import InfoList from './components/layouts/info-list';
 import Contact from './components/layouts/contact';
 import Footer from './components/layouts/footer';
-import { InfoItem } from './models/index'
 import './App.scss';
+import { InfoItem } from './components/molecules/info';
 
 
 function App() {

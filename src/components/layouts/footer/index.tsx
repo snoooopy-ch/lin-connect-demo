@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
             <li className="footer-menu-item"><a href="/">Shop</a></li>
             <li className="footer-menu-item"><a href="/">Info</a></li>
             <li className="footer-menu-item"><a href="/">Press</a></li>
-            <li className="footer-menu-item">
+            <li className="footer-menu-item icons">
               <a className="mr-16" href="/"><Facebook /></a>
               <a href="/"><Instagram /></a>
             </li>

@@ -1,5 +1,8 @@
 import "./style.scss";
-import {SectionTitleProp} from "../../../models"
+
+export interface SectionTitleProp {
+  title: string;
+}
 
 const SectionTitle: React.FC<SectionTitleProp> = (prop: SectionTitleProp) => {
 	return (

@@ -1,7 +1,14 @@
-import { GlobalColor, ItemProp } from '../../../models'
+import { GlobalColor } from '../../../models'
 import number_format from '../../../utils/number_format'
+import $sanitize from '../../../utils/sanitize_html';
 import Dot from '../../atoms/dot'
 import './style.scss';
+
+export interface ItemProp {
+  image: string,
+  title: string,
+  price: number,
+}
 
 const Item: React.FC<ItemProp> = ({
   image,
@@ -33,7 +40,7 @@ const Item: React.FC<ItemProp> = ({
           color={GlobalColor.LIGHTBLUE}
         />
       </div>
-      <p className="item-title">{ title }</p>
+      <p className="item-title">{ $sanitize(title) }</p>
       <p className="item-price">{ number_format(price) }</p>
     </div>
   )

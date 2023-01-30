@@ -1,5 +1,11 @@
-import { LinkButtonProp, Align } from '../../../models'
+import { Align } from '../../../models'
 import "./style.scss";
+
+export interface LinkButtonProp {
+  title: string;
+  link: string;
+  align?: Align;
+}
 
 const About: React.FC<LinkButtonProp> = ({title, link}) => {
 	return (

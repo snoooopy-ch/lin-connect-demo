@@ -8,6 +8,14 @@
 
   @media only screen and (max-width:767px) {
     margin-top: 60px;
+
+    .swiper-button-prev, .swiper-button-next {
+      display: none;
+    }
+
+    &-container {
+      padding: 0 25px;
+    }
   }
 
   &-linkbtn {

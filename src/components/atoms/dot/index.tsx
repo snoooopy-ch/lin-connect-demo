@@ -1,6 +1,10 @@
 import "./style.scss";
-import {DotProp} from "../../../models"
 import "../../../variables.scss"
+
+export interface DotProp {
+  size: number;
+  color: string;
+}
 
 const Dot: React.FC<DotProp> = ({size, color}) => {
 	return (

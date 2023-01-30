@@ -4,9 +4,15 @@ const TextArea : React.FC<TextAreaProp> = (prop: TextAreaProp) => {
   return (
     <div className="textarea">
       <div className="textarea-label">
-        { prop.label }
+        { prop.label?? '' }
       </div>
-      <textarea className="textarea-input" placeholder={prop.placeholder} rows={10}/>
+      <textarea 
+        className="textarea-input" 
+        placeholder={prop.placeholder?? ''} 
+        rows={10}
+        onChange={prop.onChange?? undefined}>
+        { prop.value}
+      </textarea>
     </div>
   )
 }
@@ -14,6 +20,8 @@ const TextArea : React.FC<TextAreaProp> = (prop: TextAreaProp) => {
 export default TextArea;
 
 export interface TextAreaProp {
-  label: string;
-  placeholder: string;
+  value?: string;
+  label?: string;
+  placeholder?: string;
+  onChange?: (e: any) =>void;
 }
