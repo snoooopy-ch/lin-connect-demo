@@ -15,10 +15,12 @@ import 'swiper/css/scrollbar';
 const Items: React.FC = () => {
 	return (
 		<section className="items-section">
-			<SectionTitle 
-				title='Items'
-				align={Align.CENTER}
-			/>
+			<div className="items-section-title">
+				<SectionTitle 
+					title='Items'
+				/>
+			</div>
+			
 			<Swiper
 				modules={[Navigation, Pagination, Scrollbar, A11y]}
 				spaceBetween={29.5}
@@ -64,11 +66,12 @@ const Items: React.FC = () => {
 					/>
 				</SwiperSlide>
 			</Swiper>
-			<LinkButton
-				title='View more→'
-				link='/'
-				align={Align.CENTER}
-			/>
+			<div className="items-section-linkbtn">
+				<LinkButton
+					title='View more→'
+					link='/'
+				/>
+			</div>
 		</section>
 	)
 };

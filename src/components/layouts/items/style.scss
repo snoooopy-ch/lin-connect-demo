@@ -5,4 +5,22 @@
   @media only screen and (max-width:1000px) {
     width: 100%;
   }
+
+  @media only screen and (max-width:767px) {
+    margin-top: 60px;
+  }
+
+  &-linkbtn {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-title {
+    display: flex;
+    justify-content: center;
+
+    @media only screen and (max-width:767px) {
+      justify-content: start;
+    }
+  }
 }

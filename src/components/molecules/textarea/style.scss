@@ -14,9 +14,15 @@
 
   &-input {
     font-family: 'Noto Serif JP';
-    width: 100%;
+    width: calc(100% - 20px);
     border: 1px solid #B8B8B8;
     border-radius: 6px;
     padding: 8px;
+
+    &:focus {
+      outline: none !important;
+      border:1px solid #B8B8B8;
+      box-shadow: 0 0 10px #B8B8B8;
+    }
   }
 }

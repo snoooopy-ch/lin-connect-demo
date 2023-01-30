@@ -7,24 +7,27 @@ import './style.scss';
 const InfoList: React.FC<InfoListProp> = (infos) => {
   return (
     <section className="info-section">
-      <SectionTitle
-        title={'Info'}
-        align={Align.START}
-      />
-      {infos.infos.map((info: InfoItem, i: number) => {
-        return (
-          <Info 
-            title={info.title}
-            date={info.date}
+      <div className="info-section-container">
+        <div className="info-section-title">
+          <SectionTitle
+            title={'Info'}
           />
-        )
-      })}
-      <div className="info-arrow">
-        <LinkButton
-          title={'View more→'}
-          link={'/'}
-          align={Align.CENTER}
-        />
+        </div>
+        
+        {infos.infos.map((info: InfoItem, i: number) => {
+          return (
+            <Info 
+              title={info.title}
+              date={info.date}
+            />
+          )
+        })}
+        <div className="info-arrow info-section-linkbtn">
+          <LinkButton
+            title={'View more→'}
+            link={'/'}
+          />
+        </div>
       </div>
     </section>
   )

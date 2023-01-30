@@ -1,29 +1,19 @@
 .main-visual {
-  padding-top: 17px;
-  
-  &-container {
-    display: flex;
-    padding: 0 33px;
+  .sp {
+    padding: 0;
+    width: 100%;
 
-    .wrapper1 {
-      width: 496px;
+    .main_img {
+      width: 100%;
+      display: block;
     }
 
-    .wrapper2 {
-      width: 380px;
-    }
-
-    .wrapper3 {
-      width: 440px;
-    }
-
-    .image-wrapper {
-      display: flex;
-      align-items: flex-end;
+    .logo_img {
+      width: 100%;
 
       img {
-        width: 100%;
-        vertical-align: bottom;
+        width: 64%;
+        margin: 80px auto 40px;
       }
     }
   }

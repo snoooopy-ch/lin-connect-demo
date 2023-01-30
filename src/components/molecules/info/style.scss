@@ -6,17 +6,31 @@
   text-align: left;
   border-bottom: 2px solid #efefef;
 
+  @media only screen and (max-width: 767px) {
+    padding: 16px 0;
+  }
+
   &-title {
     font-family: 'Noto Serif JP';
     font-size: 18px;
     line-height: 32px;
     margin-bottom: 16px;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 14px;
+      line-height: 25px;
+    }
   }
 
   &-date {
     font-family: 'Noto Serif JP';
     font-size: 12px;
     line-height: 12px;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 10px;
+      line-height: 12px;
+    }
   }
 
   &-arrow {

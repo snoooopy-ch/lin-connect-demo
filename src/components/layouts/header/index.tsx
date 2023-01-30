@@ -1,5 +1,6 @@
 import Facebook from "../../atoms/facebook";
 import Instagram from "../../atoms/instagram";
+import Hamburger from "../../molecules/hamburger";
 import "./style.scss";
 
 const Header: React.FC = () => {
@@ -31,22 +32,9 @@ const Header: React.FC = () => {
 
 				<nav className="sp site-nav">
 					<h1 className="logo"><a href="./index.html"><img src="/assets/images/logo_s.png" alt="" /></a>We sell only sweaters</h1>
-
 					<div className="menu-toggle">
-						<span className="line-1"></span>
-						<span className="line-2"></span>
-						<span className="line-3"></span>
+						<Hamburger />
 					</div>
-
-					<ul className="sp-menu open desktop">
-						<li><a href="/">About</a></li>
-						<li><a href="/">Item</a></li>
-						<li><a href="/">Shop</a></li>
-						<li><a href="/">Info</a></li>
-						<li><a href="/">Press</a></li>
-						<li><a href="tel:0312345678">Tel: 0312345678</a></li>
-						<li><a href="email:onlysweater@jp.com">onlysweater@jp.com</a></li>
-					</ul>
 				</nav>
 			</div>
 		</header>

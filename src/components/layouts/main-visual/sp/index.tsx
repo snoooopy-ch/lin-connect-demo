@@ -8,10 +8,8 @@ const MainVisualSP: React.FC = () => {
         <img className="main_img" src="./assets/images/main_img2.png" />
       </div>
       <MainVisualBanner />
-      <img src="./assets/images/logo_m.png" />
-      <div>
-        <img className="main_img" src="./assets/images/main_img1.png" />
-        <img className="main_img" src="./assets/images/main_img3.png" />
+      <div className="logo_img">
+        <img src="./assets/images/logo_m.png" />
       </div>
     </div>
   )

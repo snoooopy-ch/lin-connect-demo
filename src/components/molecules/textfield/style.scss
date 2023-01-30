@@ -12,15 +12,30 @@
     font-size: 18px;
     line-height: 32px;
     padding-bottom: 8px;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 16px;
+    }
   }
 
   &-input {
     font-family: 'Noto Serif JP';
-    width: 100%;
+    width: calc(100% - 20px);
     height: 32px;
     border: 1px solid #B8B8B8;
     border-radius: 6px;
     padding: 8px;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 16px;
+      height: 28px;
+    }
+
+    &:focus {
+      outline: none !important;
+      border:1px solid #B8B8B8;
+      box-shadow: 0 0 10px #B8B8B8;
+    }
   }
 }
 

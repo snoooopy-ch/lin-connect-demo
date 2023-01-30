@@ -8,6 +8,10 @@
     width: 100%;
   }
 
+  @media only screen and (max-width: 767px) {
+    margin-top: 0;
+  }
+
   &-container {
     display: flex;
 
@@ -20,6 +24,16 @@
       padding-top: 60px;
       position: relative;
       text-align: left;
+
+      @media only screen and (max-width: 767px) {
+        margin: 50px 25px 0;
+        padding-top: 0;
+      }
+
+      &-title {
+        display: flex;
+        justify-content: center;
+      }
 
       &-circle {
         position: absolute;
@@ -38,6 +52,15 @@
         font-size: 16px;
         line-height: 32px;
       }
+
+      &-linkbtn {
+        display: flex;
+        justify-content: start;
+
+        @media only screen and (max-width: 767px) {
+          justify-content: center;
+        }
+      }
     }
 
     &-image {
@@ -49,12 +72,12 @@
 
       @media only screen and (max-width: 1000px) {
         &.sp {
-          width: 100%;
+          width: calc(100% - 10px);
           padding: 0 5px;
           display: flex;
 
           img {
-            width: 50%;
+            width: calc(50% - 10px);
             padding: 0 5px;
           }
         }

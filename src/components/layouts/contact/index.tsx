@@ -9,10 +9,12 @@ const Contact: React.FC = () => {
   return (
     <section className="contact">
       <form className="contact-form">
-        <SectionTitle 
-            title='Contact'
-            align={Align.CENTER}
-          />
+        <div className="contact-form-title">
+          <SectionTitle 
+              title='Contact'
+            />
+        </div>
+        
         <div className="contact-row justify-between">
           <div className="contact-row col-6">
             <TextField

@@ -4,6 +4,10 @@
 
   @media only screen and (max-width: 880px) {
     width: 100%;
+
+    &-form {
+      padding: 0 25px;
+    }
   }
 
   &-row {
@@ -19,5 +23,10 @@
 
   .justify-between {
     justify-content: space-between;
+  }
+
+  &-form-title {
+    display:flex;
+    justify-content: center;
   }
 }
