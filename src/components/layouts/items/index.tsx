@@ -14,7 +14,7 @@ import 'swiper/css/scrollbar';
 import Good, { createDummyGood } from "../../../models/good";
 
 const Items: React.FC = () => {
-	const recommends = Array.from(Array(6).keys()).map(() => createDummyGood());
+	const recommends = Array.from(Array(5).keys()).map(() => createDummyGood());
 
 	return (
 		<section className="items-section">
